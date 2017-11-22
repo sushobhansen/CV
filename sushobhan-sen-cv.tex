@@ -2,26 +2,36 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage[margin=1in]{geometry}
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
-\pagestyle{empty} % Suppress page numbers
+%\pagestyle{empty} % Suppress page numbers
+\usepackage{amsmath}
 
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,urlcolor=blue}
 
 \usepackage{titlesec}
-\titleformat{\section}{\normalfont\bf}{\thesection}{1em}{\MakeUppercase}[\titlerule]
+\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{\MakeUppercase}[\titlerule]
 \titlespacing{\section}{0pt}{5.0pt}{0.5pt}
+\titleformat{\subsection}{\normalfont\itshape}{\thesubsection}{1em}{}
+\titlespacing{\subsection}{0pt}{0.5pt}{0.5pt}
+
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
 
 \begin{document}
+% --------------------------------
 %% Contact information
+% --------------------------------
 \begin{center}
-{\huge \uppercase{\textbf{Sushobhan Sen}}} \\
+{\large \uppercase{\textbf{Sushobhan Sen}}} \\
 3216 Newmark Lab, 205 N Matthews Ave, Urbana, IL 61801 \\
 (502)-641-2388 $\circ$ \href{mailto:sen6@illinois.edu}{sen6@illinois.edu} \\
 \href{http://sushobhansen.github.io/}{sushobhansen.github.io} $\circ$ \href{http://linkedin.com/in/sushobhansen}{linkedin.com/in/sushobhansen}
 \end{center} 
 
 \hfill \break
+% --------------------------------
 %% Education
+% --------------------------------
 \section*{Education}
 \textbf{University of Illinois at Urbana-Champaign} \hfill Urbana, IL\\
 \textit{Doctor of Philosophy in Civil Engineering} \hfill 2018 (expected)\\
@@ -36,11 +46,35 @@ Program: Transportation Engineering \hfill \textit{GPA: 4.0/4.0} \\
 Major: Civil Engineering \hfill \textit{GPA: 9.5/10.0} \\
 \strut \hfill \textit{Institute Silver Medal} \\
 
+% --------------------------------
+% Technical skills
+% --------------------------------
 \section*{Technical Skills}
 \begin{tabular}{p{10em} p{25em}}
 \textbf{Software} & AASHTO Pavement ME, OpenFOAM, AutoCAD Civil 3D, ANSYS FLUENT, Mathematica, MATLAB \\
 \textbf{Languages} & C/C++/C\#, Python, Excel VBA, HTML/CSS/JS
 \end{tabular}
 
+% --------------------------------
+% Research and Experience
+% --------------------------------
 \section*{Research and Experience}
+\subsection*{University of Illinois at Urbana-Champaign}
+\textbf{CEE Transportation Instructional Fellow} \hfill January 2017 - May 2017 \\
+Instructor for CEE 415: Geometric Design of Roads, a class of 55 graduate and undergraduate students. Delivered lectures, made and graded homework, exams, and project reports, taught AutoCAD Civil 3D, and held regular office hours. Rated 4.1 out of 5 in anonymous student feedback. \\
+
+\textbf{Graduate Teaching Assistant} \hfill January 2016 - May 2016 \\
+TA for CEE 415: Geometric Design of Roads, a class of 68 graduate and undergraduate students. Made and graded homework, exams, and project reports, while also holding regular office hours and teaching AutoCAD Civil 3D. Delivered lectures in the instructor’s absence. Rated 4.3 out of 5 in anonymous student feedback. \\
+
+\textbf{Role of Pavements in Urban Energetics} \hfill August 2015 - Present \\
+Doctoral dissertation on the assessment of the local microclimatic impact of pavements on urban areas for improved sustainability. Research included the thermal and optical characterization of pavement materials and the study of wind flow within cities using Computational Fluid Dynamics (CFD). \\
+
+\textbf{Impact of Concrete Pavements on Urban Heat Island} \hfill August 2013 - August 2015 \\
+Master's thesis on the determination of the impact of pavement surface and sub-surface structure and materials on the urban heat island. Research included the development of a 1D pavement heat transfer program and the assessment of albedo of concrete using both field and lab techniques.\\
+
+\subsection*{Technical University Munich, Germany}
+\textbf{Image-Assisted Total Station} \hfill May 2012 - July 2012 \\
+Summer research internship on integrating the subsystems of an Image-Assisted Total Station (IATS) and calibrating it using image processing algorithms and least squares fitting. Included development of a C++ program to control the IATS subsystems and calibration from laboratory tests.\\
+
+\section*{Reports and Publications}
 \end{document}
