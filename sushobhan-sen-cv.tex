@@ -1,36 +1,47 @@
 \documentclass[12pt]{article}
+
+% --------------------------------
+%% Preamble
+% --------------------------------
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage[margin=1in]{geometry}
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 %\pagestyle{empty} % Suppress page numbers
 \usepackage{amsmath}
 
-\usepackage{hyperref}
+\usepackage{hyperref} %To add hyperlinks
 \hypersetup{colorlinks=true,urlcolor=blue}
 
-\usepackage{titlesec}
+\usepackage{titlesec} %Formatting for section & subsection titles
+%Format sections and spacing
 \titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{\MakeUppercase}[\titlerule]
 \titlespacing{\section}{0pt}{5.0pt}{0.5pt}
+%Format subsections and spacing
 \titleformat{\subsection}{\normalfont\itshape}{\thesubsection}{1em}{}
 \titlespacing{\subsection}{0pt}{0.5pt}{0.5pt}
 
-\usepackage{enumitem}
+\usepackage{enumitem} %Formatting ordered lists
 \setlist[itemize]{noitemsep, topsep=0pt}
 
+\usepackage{fancyhdr} %Add fancy header
+\pagestyle{fancy}
+\fancyhead[L]{Sushobhan Sen}
+\fancyhead[R]{Curriculum Vitae}
 
 
-\begin{document} \sloppy
+
+\begin{document} \sloppy %sloppy command handles some line overflows
 % --------------------------------
 %% Contact information
 % --------------------------------
 \begin{center}
 {\large \uppercase{\textbf{Sushobhan Sen}}} \\
 3216 Newmark Lab, 205 N Matthews Ave, Urbana, IL 61801 \\
-(502)-641-2388 $\circ$ \href{mailto:sen6@illinois.edu}{sen6@illinois.edu} \\
++1-(502)-641-2388 $\circ$ \href{mailto:sen6@illinois.edu}{sen6@illinois.edu} \\
 \href{http://sushobhansen.github.io/}{sushobhansen.github.io} $\circ$ \href{http://linkedin.com/in/sushobhansen}{linkedin.com/in/sushobhansen}
 \end{center} 
 
-\hfill \break
+\hfill \break %Extra spacing between contacts and rest of CV
 % --------------------------------
 %% Education
 % --------------------------------
@@ -46,19 +57,19 @@ Program: Transportation Engineering \hfill \textit{GPA: 4.0/4.0} \\
 \textbf{Indian Institute of Technology Roorkee} \hfill Roorkee, India\\
 \textit{Bachelor of Technology} \hfill May 2013\\
 Major: Civil Engineering \hfill \textit{GPA: 9.5/10.0} \\
-\strut \hfill \textit{Institute Silver Medal} \\
+\strut \hfill \textit{Institute Silver Medal} \\ %unique extra line, strut makes sure hfill works as the first command
 
 % --------------------------------
-% Computer skills
+%% Computer skills
 % --------------------------------
 \section*{Computer Skills}
-\begin{tabular}{p{10em} p{25em}}
+\begin{tabular}{p{10em} p{25em}} %trial and error for column widths
 \textbf{Software} & AASHTO Pavement ME, OpenFOAM, AutoCAD Civil 3D, ANSYS FLUENT, Mathematica, MATLAB \\
 \textbf{Languages} & C/C++/C\#, Python, Excel VBA, HTML/CSS/JS
 \end{tabular}
 
 % --------------------------------
-% Research and Experience
+%% Research and Experience
 % --------------------------------
 \section*{Research and Experience}
 \subsection*{University of Illinois at Urbana-Champaign}
@@ -79,7 +90,7 @@ Master's thesis on the determination of the impact of pavement surface and sub-s
 Summer research internship on integrating the subsystems of an Image-Assisted Total Station (IATS) and calibrating it using image processing algorithms and least squares fitting. Included development of a C++ program to control the IATS subsystems and calibration from laboratory tests.\\
 
 % --------------------------------
-% Reports and Publications
+%% Reports and Publications
 % --------------------------------
 \section*{Reports and Publications}
 \subsection*{Peer-Reviewed Journal Articles}
@@ -115,7 +126,7 @@ Summer research internship on integrating the subsystems of an Image-Assisted To
 \end{enumerate}
 
 % --------------------------------
-% Conference Participation
+%% Conference Participation
 % --------------------------------
 \section*{Conference Participation}
 \begin{enumerate}[label=(\arabic*)]
@@ -138,7 +149,7 @@ Summer research internship on integrating the subsystems of an Image-Assisted To
 \end{enumerate}
 
 % --------------------------------
-% Presentations
+%% Presentations
 % --------------------------------
 \section*{Presentations}
 \subsection*{Seminars}
@@ -166,7 +177,7 @@ Summer research internship on integrating the subsystems of an Image-Assisted To
 \end{enumerate}
 
 % --------------------------------
-% Honors and Awards
+%% Honors and Awards
 % --------------------------------
 \section*{Honors and Awards}
 \subsection*{Illinois Center for Transportation}
@@ -204,7 +215,7 @@ Awarded a competitive Working Internships in Science and Engineering (WISE) scho
 Awarded a competitive National Talent Search Exam (NTSE) Scholarship from the Government of India for high school and undergraduate studies. \\
 
 % --------------------------------
-% Leadership and Service
+%% Leadership and Service
 % --------------------------------
 \section*{Leadership and Service}
 \subsection*{International Society for Concrete Pavements}
